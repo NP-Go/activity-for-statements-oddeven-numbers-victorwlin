@@ -1,5 +1,16 @@
 package main
 
+import "fmt"
+
 func main() {
-	//Insert code here
+	var input int
+
+	fmt.Println("Enter number:")
+	fmt.Scanln(&input)
+
+	if input%2 == 0 {
+		fmt.Println(input, "is even.")
+	} else if input%2 == 1 {
+		fmt.Println(input, "is odd.")
+	}
 }
